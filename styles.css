@@ -614,13 +614,12 @@ body {
 }
 
 /* 📱 Responsive Design for Phones */
-/* 📱 Responsive Design for Phones */
 @media (max-width: 768px) {
     /* Adjust Navbar */
     .navbar {
         flex-direction: column;
         text-align: center;
-        padding: 15px;
+        padding: 10px; /* Reduced padding to make height smaller */
     }
 
     .navbar-links {
@@ -630,18 +629,18 @@ body {
     }
 
     .logo img {
-        height: 40px;
+        height: 35px; /* Reduced logo size */
     }
 
     .language-changer {
-        margin-top: 10px;
+        margin-top: 5px;
         display: flex;
         justify-content: center;
     }
 
     /* Hero Section Adjustments */
     .hero-section {
-        margin-top: 70px;
+        margin-top: 60px; /* Adjust for smaller navbar */
     }
 
     .hero-text {
@@ -743,7 +742,7 @@ body {
 @media (max-width: 480px) {
     /* Further Adjustments for Smaller Phones */
     .navbar {
-        padding: 10px;
+        padding: 8px; /* Further reduced padding for smaller phones */
     }
 
     .navbar-links {
