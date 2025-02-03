@@ -20,64 +20,52 @@ body {
 
 .logo-container {
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.logo {
+.logo-title {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
+    align-items: center;
+    font-size: 2.5rem;
     font-weight: bold;
-    font-size: 4rem;
-    letter-spacing: -5px;
+    color: #0044cc; /* Dark blue for the title */
 }
 
-.logo span {
+.logo-title span {
     display: inline-block;
-    position: relative;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background: linear-gradient(90deg, #0044cc, #85d7ff);
+    border: 2px solid #0044cc; /* Border around the text */
+    padding: 0 5px;
+    margin: 0 3px;
 }
 
-.logo .p {
-    margin-right: 10px;
-    transform: skewX(-10deg);
-}
-
-.logo .a {
-    position: relative;
-    margin-left: -10px;
-}
-
-.logo .a::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 15px;
-    height: 100%;
-    background: #ffffff;
-    transform: skewX(-10deg);
-}
-
-.subtext {
-    font-family: Arial, sans-serif;
+.logo-subtext {
     font-size: 1rem;
     font-weight: 500;
-    margin-top: -10px;
-    color: #444;
+    color: #000; /* Black color for subtext */
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-top: 5px;
+    position: relative;
 }
 
-.subtext span {
-    margin: 0 5px;
-    font-weight: bold;
-    color: #0044cc;
+.logo-subtext::before,
+.logo-subtext::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 40px;
+    top: 50%;
 }
 
+.logo-subtext::before {
+    left: -50px;
+}
+
+.logo-subtext::after {
+    right: -50px;
+}
 /* Navbar Links */
 .navbar-links {
     display: flex;
