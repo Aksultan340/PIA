@@ -614,6 +614,7 @@ body {
 }
 
 /* 📱 Responsive Design for Phones */
+/* 📱 Responsive Design for Phones */
 @media (max-width: 768px) {
     /* Adjust Navbar */
     .navbar {
@@ -645,6 +646,11 @@ body {
 
     .hero-text {
         font-size: 28px;
+    }
+
+    /* Breadcrumb Container */
+    .breadcrumb-container {
+        display: none; /* Hide breadcrumb on phones */
     }
 
     /* Main Content Adjustments */
@@ -777,6 +783,7 @@ body {
         padding: 20px;
     }
 }
+
 
 
 
