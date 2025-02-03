@@ -664,7 +664,7 @@ body {
     .additional-info {
         text-align: center; /* Center-align the text */
         margin: 0 auto; /* Center the section */
-        padding: 10px;
+        padding: 15px;
         background-color: #f8f9fa; /* Light background for separation */
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
@@ -680,14 +680,16 @@ body {
     }
 
     .contact-section h2 {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 15px;
+        line-height: 1.4;
     }
 
     .contact-section p {
         font-size: 16px;
         margin-bottom: 20px;
         color: #555;
+        line-height: 1.6;
     }
 
     .contact-right form {
@@ -695,14 +697,14 @@ body {
         flex-direction: column;
         gap: 15px;
         width: 100%;
-        max-width: 400px; /* Limit form width on larger screens */
+        max-width: 450px; /* Slightly larger width for form */
         margin: 0 auto;
     }
 
     .contact-right input,
     .contact-right textarea {
         width: 100%; /* Full width for inputs */
-        padding: 12px;
+        padding: 14px;
         font-size: 16px;
         border: 1px solid #ddd;
         border-radius: 8px;
@@ -711,7 +713,7 @@ body {
     }
 
     .contact-right textarea {
-        height: 100px;
+        height: 120px; /* Slightly taller textarea */
         resize: none;
     }
 
@@ -719,7 +721,7 @@ body {
         background-color: #007bff;
         color: #fff;
         border: none;
-        padding: 12px;
+        padding: 14px;
         font-size: 16px;
         border-radius: 8px;
         cursor: pointer;
@@ -755,15 +757,19 @@ body {
         padding: 15px;
     }
 
+    .contact-section h2 {
+        font-size: 20px; /* Adjust title font size */
+    }
+
     .contact-right input,
     .contact-right textarea {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 15px;
+        padding: 12px; /* Slightly smaller padding for inputs */
     }
 
     .contact-right button {
-        padding: 10px;
-        font-size: 14px;
+        padding: 12px;
+        font-size: 15px; /* Smaller button text */
     }
 
     .footer {
@@ -771,6 +777,7 @@ body {
         padding: 20px;
     }
 }
+
 
 
 
