@@ -18,62 +18,64 @@ body {
     z-index: 1000;
 }
 
+.logo-container {
+    text-align: center;
+}
+
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    display: flex;
-    align-items: flex-end;
-    font-size: 5rem;
-    line-height: 1;
+    font-size: 4rem;
+    letter-spacing: -5px;
+}
+
+.logo span {
+    display: inline-block;
+    position: relative;
     color: transparent;
-    background: linear-gradient(90deg, #007bff, #85d7ff);
     -webkit-background-clip: text;
     background-clip: text;
+    background: linear-gradient(90deg, #0044cc, #85d7ff);
 }
 
 .logo .p {
-    margin-right: 5px;
+    margin-right: 10px;
     transform: skewX(-10deg);
-    position: relative;
-}
-
-.logo .p::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -5px;
-    width: 10px;
-    height: 100%;
-    background: #fff;
 }
 
 .logo .a {
-    margin-left: -10px;
     position: relative;
+    margin-left: -10px;
 }
 
-.logo .a::after {
+.logo .a::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 20px;
-    width: 10px;
+    top: -10px;
+    left: -10px;
+    width: 15px;
     height: 100%;
-    background: #fff;
+    background: #ffffff;
+    transform: skewX(-10deg);
 }
 
 .subtext {
     font-family: Arial, sans-serif;
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: 500;
     margin-top: -10px;
-    color: #555;
+    color: #444;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .subtext span {
     margin: 0 5px;
+    font-weight: bold;
+    color: #0044cc;
 }
 
 /* Navbar Links */
