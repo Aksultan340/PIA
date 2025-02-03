@@ -509,8 +509,21 @@ body {
     }
     .navbar-links {
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        align-items: center;
+        gap: 20px; /* Add spacing between links */
+        margin: 20px 0; /* Add top and bottom margin */
+    }
+    .navbar-links a,
+    .navbar-links .dropbtn {
+        color: #0044cc;
+        text-decoration: none;
+        font-size: 18px; /* Slightly larger font */
+        padding: 10px 15px; /* Add padding for better tap targets */
+    }
+    .navbar-links a:hover,
+    .navbar-links .dropbtn:hover {
+        text-decoration: underline;
+        color: #0056b3;
     }
     .hero-text {
         font-size: 24px;
@@ -540,6 +553,7 @@ body {
         font-size: 14px;
     }
 }
+
 
 
 
