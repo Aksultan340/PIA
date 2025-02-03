@@ -18,54 +18,30 @@ body {
     z-index: 1000;
 }
 
-.logo-container {
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.logo-title {
-    display: flex;
-    justify-content: center;
+/* Logo and Company Name */
+.logo a {
+    display: inline-flex;
     align-items: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #0044cc; /* Dark blue for the title */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Original color */
 }
 
-.logo-title span {
-    display: inline-block;
-    border: 2px solid #0044cc; /* Border around the text */
-    padding: 0 5px;
-    margin: 0 3px;
+.logo a:hover,
+.logo a:focus {
+    text-decoration: none; /* Keep no underline on hover */
+    color: #000; /* Retain the original color */
 }
 
-.logo-subtext {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #000; /* Black color for subtext */
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 5px;
-    position: relative;
+.logo img {
+    height: 50px; /* Maintain a consistent size for the logo */
+    margin-right: 10px; /* Spacing between logo and text */
 }
 
-.logo-subtext::before,
-.logo-subtext::after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    background-color: black;
-    width: 40px;
-    top: 50%;
+.logo span {
+    font-size: 16px; /* Adjust font size for the company name */
+    line-height: 1; /* Ensure proper spacing */
 }
 
-.logo-subtext::before {
-    left: -50px;
-}
-
-.logo-subtext::after {
-    right: -50px;
-}
 /* Navbar Links */
 .navbar-links {
     display: flex;
