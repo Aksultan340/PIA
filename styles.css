@@ -615,15 +615,7 @@ body {
 
 /* 📱 Responsive Design for Phones */
 @media (max-width: 768px) {
-    /* Additional design adjustments only for phones */
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
+    /* Adjust Navbar */
     .navbar {
         flex-direction: column;
         text-align: center;
@@ -633,56 +625,75 @@ body {
     .navbar-links {
         flex-direction: column;
         gap: 10px;
+        margin: 10px 0;
     }
 
     .logo img {
-        height: 40px; /* Adjust logo size */
+        height: 40px;
     }
 
-    .hero-section {
-        margin-top: 70px; /* Offset for fixed navbar */
+    .language-changer {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
     }
 
-    .hero-text {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-container {
-        gap: 8px; /* Smaller gap for compact layout */
-        padding: 8px;
-    }
-
-    .navbar {
-        padding: 10px;
-    }
-
-    .navbar-links {
-        gap: 8px; /* Reduce gap between links */
-    }
-
-    .logo img {
-        height: 35px; /* Further reduce logo size */
-    }
-
+    /* Hero Section Adjustments */
     .hero-section {
         margin-top: 60px;
     }
 
     .hero-text {
-        font-size: 20px; /* Adjust font size for very small screens */
+        font-size: 28px;
+    }
+
+    /* Main Content Adjustments */
+    .main-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
     }
 
     .contact-section {
+        flex-direction: column;
+        gap: 20px;
         padding: 20px;
     }
 
+    .text-section img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further Adjustments for Smaller Phones */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-links {
+        gap: 8px;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .contact-section {
+        padding: 15px;
+    }
+
     .footer {
-        font-size: 12px; /* Smaller font size for footer */
+        font-size: 14px;
         padding: 20px;
     }
 }
+
 
 
 
