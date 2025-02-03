@@ -501,6 +501,45 @@ body {
     text-decoration: underline;
 }
 
+/* 📱 Responsive Design for Phones */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .hero-text {
+        font-size: 24px;
+        width: 80%;
+        text-align: center;
+    }
+    .main-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .contact-section {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 18px;
+        width: 90%;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .footer {
+        font-size: 14px;
+    }
+}
 
 
 
