@@ -18,28 +18,62 @@ body {
     z-index: 1000;
 }
 
-/* Logo and Company Name */
-.logo a {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none; /* Remove underline */
-    color: #000; /* Original color */
+.logo {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    font-size: 5rem;
+    line-height: 1;
+    color: transparent;
+    background: linear-gradient(90deg, #007bff, #85d7ff);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
-.logo a:hover,
-.logo a:focus {
-    text-decoration: none; /* Keep no underline on hover */
-    color: #000; /* Retain the original color */
+.logo .p {
+    margin-right: 5px;
+    transform: skewX(-10deg);
+    position: relative;
 }
 
-.logo img {
-    height: 50px; /* Maintain a consistent size for the logo */
-    margin-right: 10px; /* Spacing between logo and text */
+.logo .p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 10px;
+    height: 100%;
+    background: #fff;
 }
 
-.logo span {
-    font-size: 16px; /* Adjust font size for the company name */
-    line-height: 1; /* Ensure proper spacing */
+.logo .a {
+    margin-left: -10px;
+    position: relative;
+}
+
+.logo .a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 10px;
+    height: 100%;
+    background: #fff;
+}
+
+.subtext {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: -10px;
+    color: #555;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.subtext span {
+    margin: 0 5px;
 }
 
 /* Navbar Links */
