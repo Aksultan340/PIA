@@ -682,19 +682,25 @@ body {
         background-color: #ffffff; /* Clean background for the form */
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content inside the div */
     }
 
     .contact-section h2 {
         font-size: 24px;
         margin-bottom: 15px;
         line-height: 1.4;
+        text-align: center; /* Center the title */
     }
 
     .contact-section p {
-        font-size: 16px;
-        margin-bottom: 20px;
-        color: #555;
-        line-height: 1.6;
+        display: none; /* Hide additional text */
+    }
+
+    .contact-right {
+        width: 100%;
+        max-width: 450px; /* Slightly larger width for form */
     }
 
     .contact-right form {
@@ -702,7 +708,6 @@ body {
         flex-direction: column;
         gap: 15px;
         width: 100%;
-        max-width: 450px; /* Slightly larger width for form */
         margin: 0 auto;
     }
 
