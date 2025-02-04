@@ -623,26 +623,47 @@ body {
     }
 
     .navbar-links {
-        display: none; /* Default state hidden */
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4f4f4;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-links.show {
+        display: flex; /* Show links when toggled */
+    }
+
+    .toggle-navbar {
+        display: block; /* Show toggle button on mobile */
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #0044cc;
+        margin-left: auto;
+    }
+
+    .dropdown-content {
+        display: none; /* Hide dropdown content by default */
         flex-direction: column;
         gap: 10px;
-        text-align: center;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
 
-    .navbar-links a {
-        font-size: 18px;
-        padding: 5px 0;
+    .dropdown:hover .dropdown-content {
+        display: flex; /* Show dropdown on hover */
     }
 
-    .toggle-button {
-        display: block;
-        font-size: 18px;
-        background: none;
-        border: none;
-        color: #333;
-        cursor: pointer;
-        margin-top: 10px;
-    }
 
     .logo img {
         height: 35px; /* Reduced logo size */
@@ -759,10 +780,6 @@ body {
         font-size: 16px; /* Adjust link font size */
     }
 
-    .toggle-button {
-        font-size: 16px; /* Adjust button size */
-        margin-top: 8px;
-    }
 
     .hero-section img {
         height: 250px; /* Reduce hero image height */
