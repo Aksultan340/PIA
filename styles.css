@@ -617,15 +617,31 @@ body {
 @media (max-width: 768px) {
     /* Adjust Navbar */
     .navbar {
+        padding: 10px 20px;
         flex-direction: column;
-        text-align: center;
-        padding: 10px; /* Reduced padding to make height smaller */
+        position: relative;
     }
 
     .navbar-links {
+        display: none; /* Default state hidden */
         flex-direction: column;
         gap: 10px;
-        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-links a {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    .toggle-button {
+        display: block;
+        font-size: 18px;
+        background: none;
+        border: none;
+        color: #333;
+        cursor: pointer;
+        margin-top: 10px;
     }
 
     .logo img {
@@ -676,23 +692,15 @@ body {
     }
 
     .contact-section {
-        text-align: center;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #ffffff; /* Clean background for the form */
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
         flex-direction: column;
-        align-items: center; /* Center content inside the div */
+        text-align: center;
     }
 
     .contact-section h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-        line-height: 1.4;
-        text-align: center; /* Center the title */
+        font-size: 22px;
+        margin-bottom: 10px;
     }
+
 
     .contact-section p {
         display: none; /* Hide additional text */
@@ -700,14 +708,11 @@ body {
 
     .contact-right {
         width: 100%;
-        max-width: 450px; /* Slightly larger width for form */
+        padding: 10px;
     }
 
     .contact-right form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
+        max-width: 450px;
         margin: 0 auto;
     }
 
@@ -747,44 +752,72 @@ body {
 @media (max-width: 480px) {
     /* Further Adjustments for Smaller Phones */
     .navbar {
-        padding: 8px; /* Further reduced padding for smaller phones */
+        padding: 8px 15px; /* Smaller padding */
     }
 
-    .navbar-links {
-        gap: 8px;
+    .navbar-links a {
+        font-size: 16px; /* Adjust link font size */
+    }
+
+    .toggle-button {
+        font-size: 16px; /* Adjust button size */
+        margin-top: 8px;
+    }
+
+    .hero-section img {
+        height: 250px; /* Reduce hero image height */
     }
 
     .hero-text {
-        font-size: 24px;
+        font-size: 20px; /* Smaller font size for hero text */
     }
+
 
     .main-content {
-        padding: 15px;
+        padding: 15px; /* Smaller padding */
     }
 
-    .contact-section,
-    .additional-info {
+    .text-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .contact-section {
         padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .contact-section h2 {
-        font-size: 20px; /* Adjust title font size */
+        font-size: 20px; /* Slightly smaller heading */
+    }
+
+    .contact-right {
+        padding: 10px;
     }
 
     .contact-right input,
     .contact-right textarea {
-        font-size: 15px;
-        padding: 12px; /* Slightly smaller padding for inputs */
+        font-size: 14px; /* Smaller font size for inputs */
+        padding: 10px;
     }
 
     .contact-right button {
-        padding: 12px;
-        font-size: 15px; /* Smaller button text */
+        padding: 10px;
+        font-size: 14px; /* Smaller button size */
     }
 
+
+    /* Footer adjustments */
     .footer {
-        font-size: 14px;
-        padding: 20px;
+        font-size: 12px; /* Smaller footer text */
+        padding: 15px;
+    }
+
+    .footer-section {
+        text-align: center; /* Center-align footer sections */
     }
 }
 

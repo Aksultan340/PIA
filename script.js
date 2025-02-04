@@ -29,6 +29,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Toggle functionality for collapsible button
+const toggleButton = document.getElementById("toggleButton");
+const collapsibleContent = document.querySelector(".collapsible-content");
+
+toggleButton.addEventListener("click", () => {
+    if (collapsibleContent.style.display === "block") {
+        collapsibleContent.style.display = "none";
+        toggleButton.textContent = "∨";
+    } else {
+        collapsibleContent.style.display = "block";
+        toggleButton.textContent = "∧";
+    }
+});
+
+
 
 
 
