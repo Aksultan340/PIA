@@ -638,7 +638,7 @@ body {
     .navbar-links.show {
         display: flex; /* Show the links when toggled */
     }
-}
+
     .toggle-navbar {
         display: block; /* Ensure the button is visible */
         position: absolute; /* Position the button */
