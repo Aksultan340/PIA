@@ -623,26 +623,32 @@ body {
     }
 
     .navbar-links {
-        display: none; /* Hide links by default */
+        display: none; /* Default state: hidden */
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        background-color: #f4f4f4;
+        background-color: #f4f4f4; /* Match the navbar background */
         padding: 10px 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 60px; /* Place the dropdown below the navbar */
+        left: 0;
     }
 
     .navbar-links.show {
-        display: flex; /* Show links when toggled */
+        display: flex; /* Show the links when toggled */
     }
-
+}
     .toggle-navbar {
-        display: block; /* Show toggle button on mobile */
-        background-color: transparent;
-        border: none;
-        font-size: 24px;
+        display: block; /* Ensure the button is visible */
+        position: absolute; /* Position the button */
+        top: 10px; /* Align it to the top */
+        right: 10px; /* Align it to the right */
+        background-color: transparent; /* Remove any background */
+        border: none; /* Remove border */
+        font-size: 24px; /* Adjust button size */
         cursor: pointer;
-        margin-left: auto;
+        z-index: 1001; /* Ensure it appears above other elements */
     }
 
     .logo img {
@@ -650,11 +656,10 @@ body {
     }
 
     .language-changer {
-        margin-top: 5px;
-        display: flex;
-        justify-content: center;
+        display: none; /* Hide language selector on phones */
     }
-}
+
+
 
     /* Hero Section Adjustments */
     .hero-section {
@@ -817,6 +822,11 @@ body {
     .footer-section {
         text-align: center; /* Center-align footer sections */
     }
+
+    .language-changer {
+        display: none; /* Hide language selector on phones */
+    }
+
 }
 
 
