@@ -643,6 +643,7 @@ body {
         width: 100%; /* Match the width of the gray container */
         background-color: white; /* White dropdown block */
         padding: 20px 0; /* Add padding for better spacing */
+        padding-right: 20px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
     }
