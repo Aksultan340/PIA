@@ -613,6 +613,10 @@ body {
     text-align: center;
 }
 
+.toggle-navbar {
+    display: none;
+}
+
 @media (max-width: 768px) {
     /* Global adjustments */
     body {
