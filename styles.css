@@ -613,16 +613,16 @@ body {
     text-align: center;
 }
 
-/* 📱 Responsive Design for Phones */
 @media (max-width: 768px) {
-      /* Navbar adjustments */
-      body {
+    /* Global adjustments */
+    body {
         margin: 0;
         padding: 0;
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
-      .navbar {
+    /* Navbar adjustments */
+    .navbar {
         padding: 10px 15px; /* Adjust padding for smaller screens */
         width: 100%; /* Ensure the navbar spans the full viewport */
         max-width: 100vw; /* Prevent extra space caused by wide elements */
@@ -633,10 +633,12 @@ body {
 
     .navbar-links {
         display: none; /* Default state: hidden */
-        
-            width: 100%; /* Ensure navbar links don't exceed the viewport */
-            box-sizing: border-box;
-            padding: 0; /* Adjust padding to align properly */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%; /* Ensure navbar links don't exceed the viewport */
+        background-color: #f4f4f4;
+        padding: 10px 0;
+        box-sizing: border-box;
     }
 
     .navbar-links.show {
@@ -668,10 +670,7 @@ body {
         display: none; /* Hide language selector on phones */
     }
 
-
-
     /* Hero Section Adjustments */
-    
     .hero-section {
         width: 100%; /* Ensure hero section matches viewport width */
         margin: 0 auto;
@@ -692,6 +691,8 @@ body {
         flex-direction: column;
         gap: 20px;
         padding: 20px;
+        max-width: 100%; /* Ensure main content does not overflow */
+        box-sizing: border-box;
     }
 
     .additional-info-container {
@@ -699,6 +700,8 @@ body {
         flex-direction: column; /* Stack sections vertically */
         gap: 20px; /* Add space between sections */
         padding: 20px;
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box;
     }
 
     .additional-info {
@@ -707,7 +710,7 @@ body {
         padding: 15px;
         background-color: #f8f9fa; /* Light background for separation */
         border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+        box-sizing: border-box; /* Ensure consistent padding and width */
     }
 
     .contact-section {
@@ -720,14 +723,11 @@ body {
         margin-bottom: 10px;
     }
 
-
-    .contact-section p {
-        display: none; /* Hide additional text */
-    }
-
     .contact-right {
         width: 100%;
         padding: 10px;
+        max-width: 100%; /* Prevent form overflow */
+        box-sizing: border-box;
     }
 
     .contact-right form {
@@ -769,44 +769,40 @@ body {
 }
 
 @media (max-width: 480px) {
-    /* Further Adjustments for Smaller Phones */
+    /* Adjustments for smaller phones */
     .navbar {
         padding: 8px 15px; /* Smaller padding */
+        max-width: 100%; /* Ensure navbar does not overflow */
+        box-sizing: border-box;
     }
 
     .navbar-links a {
         font-size: 16px; /* Adjust link font size */
     }
 
-
     .hero-section img {
         height: 250px; /* Reduce hero image height */
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box;
     }
 
     .hero-text {
         font-size: 20px; /* Smaller font size for hero text */
     }
 
-
     .main-content {
         padding: 15px; /* Smaller padding */
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box;
     }
-
-    .text-section img {
-        max-width: 100%;
-        height: auto;
-    }
-
 
     .contact-section {
         padding: 15px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .contact-section h2 {
-        font-size: 20px; /* Slightly smaller heading */
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box;
     }
 
     .contact-right {
@@ -824,11 +820,11 @@ body {
         font-size: 14px; /* Smaller button size */
     }
 
-
-    /* Footer adjustments */
     .footer {
         font-size: 12px; /* Smaller footer text */
         padding: 15px;
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box;
     }
 
     .footer-section {
@@ -838,8 +834,8 @@ body {
     .language-changer {
         display: none; /* Hide language selector on phones */
     }
-
 }
+
 
 
 
