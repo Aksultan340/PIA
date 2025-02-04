@@ -47,7 +47,7 @@ body {
     display: flex;
     align-items: center;
     gap: 45px; /* Increase the gap to shift the links to the right */
-    margin-left: 80px; /* Add a left margin to move the links slightly */
+    margin-left: 60px; /* Add a left margin to move the links slightly */
 }
 
 
