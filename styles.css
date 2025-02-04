@@ -645,6 +645,7 @@ body {
         margin-left: auto;
     }
 
+
     .dropdown-content {
         position: relative; /* Adjust dropdown position for mobile */
         box-shadow: none; /* Remove shadow */

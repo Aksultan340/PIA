@@ -29,10 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-document.getElementById('toggleNavbar').addEventListener('click', function () {
-    const navbarLinks = document.getElementById('navbarLinks');
-    navbarLinks.classList.toggle('show');
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".toggle-navbar");
+    const navbarLinks = document.querySelector(".navbar-links");
+
+    toggleButton.addEventListener("click", function () {
+        navbarLinks.classList.toggle("show");
+    });
 });
+
 
 
 
