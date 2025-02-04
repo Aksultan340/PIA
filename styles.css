@@ -627,39 +627,57 @@ body {
 
     /* Navbar adjustments */
     .navbar {
-        padding: 10px 15px; /* Adjust padding for smaller screens */
-        width: 100%; /* Ensure the navbar spans the full viewport */
-        max-width: 100vw; /* Prevent extra space caused by wide elements */
-        box-sizing: border-box; /* Include padding in width calculation */
-        overflow-x: hidden; /* Hide any overflow */
-        margin: 0 auto; /* Center the navbar */
-    }
-
-    .navbar-links {
-        display: none; /* Default state: hidden */
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%; /* Ensure navbar links don't exceed the viewport */
-        background-color: #f4f4f4;
-        padding: 10px 0;
+        width: 100%;
         box-sizing: border-box;
     }
 
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #ffffff; /* White background for clean design */
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        border-radius: 8px; /* Rounded corners */
+        padding: 15px; /* Padding inside the dropdown */
+        margin-top: 10px; /* Space between the button and dropdown */
+    }
+
+    .navbar-links a {
+        text-decoration: none; /* Remove underline from links */
+        color: #2c3e50; /* Text color */
+        font-size: 16px; /* Font size for links */
+        font-weight: bold; /* Make the text bold */
+        padding: 10px 15px; /* Add padding for clickable area */
+        border-radius: 4px; /* Add slight rounding to hover effect */
+        display: block; /* Ensure links stack vertically */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+    }
+
+    .navbar-links a:hover {
+        background-color: #f4f4f4; /* Light gray background on hover */
+        color: #007bff; /* Blue text color on hover */
+    }
+
     .navbar-links.show {
-        display: flex; /* Show the links when toggled */
+        display: flex; /* Show links when toggled */
     }
 
     .toggle-navbar {
-        display: block; /* Ensure the button is visible */
-        position: absolute; /* Position the button */
-        top: 10px; /* Align it to the top */
-        right: 10px; /* Align it to the right */
-        background-color: transparent; /* Remove any background */
-        border: none; /* Remove border */
-        font-size: 24px; /* Adjust button size */
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
         cursor: pointer;
-        z-index: 1001; /* Ensure it appears above other elements */
+        margin-left: auto;
+        color: #2c3e50; /* Match button color with dropdown links */
+        transition: transform 0.3s ease; /* Add rotation effect on click */
     }
+
+    .toggle-navbar.active {
+        transform: rotate(90deg); /* Rotate the button when active */
+    }
+
 
     .logo {
         max-width: calc(100% - 30px); /* Keep logo within the viewport */
