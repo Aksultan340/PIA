@@ -627,61 +627,53 @@ body {
 
     /* Navbar adjustments */
     .navbar {
+        padding: 10px 15px;
         width: 100%;
+        max-width: 100vw;
+        position: relative;
         box-sizing: border-box;
+        background-color: #f4f4f4;
     }
+
 
     .navbar-links {
         display: none;
         flex-direction: column;
-        align-items: center; /* Center-align links horizontally */
-        justify-content: space-evenly; /* Distribute links evenly vertically */
-        background-color: #ffffff; /* White background */
-        height: 100vh; /* Full vertical height of the viewport */
-        width: 100%; /* Full width of the viewport */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        position: fixed; /* Fix dropdown to the screen */
-        top: 0; /* Align at the top of the viewport */
-        left: 0; /* Align to the left */
-        z-index: 1000; /* Ensure it stays on top */
-        padding: 0; /* No padding around the dropdown */
-        margin: 0;
+        align-items: center;
+        width: 100%; /* Match the width of the gray container */
+        background-color: white; /* White dropdown block */
+        padding: 20px 0; /* Add padding for better spacing */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
     }
 
     .navbar-links a {
-        text-decoration: none;
-        color: #2c3e50; /* Text color */
-        font-size: 18px; /* Adjust font size */
-        font-weight: bold; /* Bold text */
-        padding: 20px 0; /* Space around the links */
-        width: 100%; /* Full width for clickability */
         text-align: center; /* Center the text */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+        width: 100%; /* Full width for each link */
+        padding: 15px 0; /* Add padding for spacing */
+        font-size: 18px; /* Adjust font size */
+        color: #333; /* Text color */
+        text-decoration: none;
     }
 
     .navbar-links a:hover {
-        background-color: #f4f4f4; /* Light gray background on hover */
-        color: #007bff; /* Blue text color on hover */
+        background-color: #f8f8f8; /* Highlight on hover */
     }
 
     .navbar-links.show {
-        display: flex; /* Show links when toggled */
-        transform: translateY(0); /* Bring dropdown into view */
-        opacity: 1; /* Make visible */
+        display: flex; /* Show dropdown when toggled */
     }
 
     .toggle-navbar {
         display: block;
-        position: fixed; /* Keep button fixed on top */
-        top: 10px; /* Align with the top of the screen */
-        right: 10px; /* Align with the right of the screen */
-        background-color: transparent; /* Remove any background */
-        border: none; /* Remove border */
-        font-size: 24px; /* Adjust button size */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
         cursor: pointer;
-        z-index: 1001; /* Ensure it appears above other elements */
-        color: #2c3e50; /* Match button color with dropdown links */
-        transition: transform 0.3s ease; /* Add rotation effect on click */
+        z-index: 1001;
     }
 
     .toggle-navbar.active {
