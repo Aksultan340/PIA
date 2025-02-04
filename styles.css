@@ -615,8 +615,8 @@ body {
 
 /* 📱 Responsive Design for Phones */
 @media (max-width: 768px) {
-    /* Adjust Navbar */
-    .navbar {
+      /* Navbar adjustments */
+      .navbar {
         padding: 10px 20px;
         flex-direction: column;
         position: relative;
@@ -645,19 +645,8 @@ body {
         margin-left: auto;
     }
 
-
-    .dropdown-content {
-        position: relative; /* Adjust dropdown position for mobile */
-        box-shadow: none; /* Remove shadow */
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: flex; /* Show dropdown on hover */
-    }
-
-
     .logo img {
-        height: 35px; /* Reduced logo size */
+        height: 35px;
     }
 
     .language-changer {
@@ -665,6 +654,7 @@ body {
         display: flex;
         justify-content: center;
     }
+}
 
     /* Hero Section Adjustments */
     .hero-section {
