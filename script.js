@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Toggle navbar links on mobile
 document.getElementById('toggleNavbar').addEventListener('click', function () {
     const navbarLinks = document.getElementById('navbarLinks');
     navbarLinks.classList.toggle('show');

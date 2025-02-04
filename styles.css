@@ -625,15 +625,11 @@ body {
     .navbar-links {
         display: none; /* Hide links by default */
         flex-direction: column;
-        align-items: center;
-        background-color: #f4f4f4;
-        position: absolute;
-        top: 60px;
-        left: 0;
+        align-items: flex-start;
         width: 100%;
-        z-index: 1000;
+        background-color: #f4f4f4;
         padding: 10px 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .navbar-links.show {
@@ -646,18 +642,12 @@ body {
         border: none;
         font-size: 24px;
         cursor: pointer;
-        color: #0044cc;
         margin-left: auto;
     }
 
     .dropdown-content {
-        display: none; /* Hide dropdown content by default */
-        flex-direction: column;
-        gap: 10px;
-        background-color: #ffffff;
-        padding: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+        position: relative; /* Adjust dropdown position for mobile */
+        box-shadow: none; /* Remove shadow */
     }
 
     .dropdown:hover .dropdown-content {
