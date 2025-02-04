@@ -617,7 +617,7 @@ body {
 @media (max-width: 768px) {
       /* Navbar adjustments */
       .navbar {
-        padding: 10px 20px;
+        padding: 10px 10px;
         flex-direction: column;
         position: relative;
     }
